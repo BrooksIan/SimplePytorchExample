@@ -1,0 +1,9 @@
+# Cloudera AI Workbench (Python 3.11): CPU-only PyTorch to avoid kernel crash.
+# Install from a terminal (not inside a notebook), then restart the session before importing torch.
+#
+# From project root:
+#   pip install --no-cache-dir -r requirements-workbench.txt
+# Then restart the session/kernel and run your code.
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0,<2.6
